@@ -1,0 +1,145 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #373b3f;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+}
+
+.lighterz-buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    gap: 5rem;
+}
+
+/* Slider container */
+.lighterz-box {
+    width: 75%;
+    overflow: hidden;
+    border-radius: 20px;
+    animation: float 3s ease-in-out infinite; /* Floating effect for the box */
+}
+
+
+.container-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.lighterz-img {
+    min-width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 20px;
+    mix-blend-mode:difference;
+}
+
+.phone-img{
+    filter: brightness(1.2) contrast(1.6);
+}
+
+.nav-button{
+    border: none;
+    background-color: transparent;
+    font-size: 5rem;
+    color: white;
+    font-weight: 100;
+}
+
+.nav-button:hover{
+    color: rgb(178, 178, 178);
+    
+}
+
+.shadoww{
+    z-index: -1;
+    position: absolute;
+    top: 82vh;
+    left: 20vw;
+    width: 60%;
+    height: 0px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 40px white;
+    animation: shadow-float 3s ease-in-out infinite; /* Animate the shadow */
+}
+
+/* Floating animation for the lighterz-box */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Shadow animation */
+@keyframes shadow-float {
+    0%, 100% {
+        box-shadow: 0 0 30px 30px white;
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 50px 40px white;
+        transform: scale(1.05);
+    }
+}
+
+.pricing{
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    z-index: 1;
+    padding-left: 5rem;
+    top: -2rem;
+}
+
+.lig-head{
+    font-size: 4.5rem;
+    font-weight: 100;
+}
+.price{
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.buy-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.buy-buttn{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 100;
+    transition: all 0.2s ease;
+    border: solid 1px black;
+}
+
+.buy-buttn:hover{
+    transform: scale(1.05);
+    background-color: rgb(40, 40, 41);
+    color: white;
+    border: solid 1px white;
+}
+
+.buy-buttn:active{
+    background-color: rgb(82, 82, 82);
+}
+
+.add-to-cart{
+    background-color: #fff;
+}
+

@@ -1,0 +1,239 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #373b3f;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+#hLeft{
+    display: flex;
+}
+
+#aerox{
+    font-size: 3rem;
+    margin-top: 4px;
+    margin-left: 10px;      /* pixel here for margin */
+}
+
+.square-headphone{
+    height: 40rem;
+    border-radius: 50px;
+    position: relative;
+    top: -3rem;
+    /* box-shadow: 0 0 20px rgb(255, 255, 255); */
+    animation: glowing 4s ease-in 2s infinite ;
+
+}
+
+@keyframes glowing { 
+    0%{
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0 0 20px rgb(206, 206, 206);
+    }
+    100%{
+        box-shadow: none;
+    }
+}
+
+#hidee{
+    display: none;
+}
+
+
+
+
+
+hero{
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 6rem;
+    align-items: center;
+}
+
+#hero-box{
+    width: 100%;
+    height: 50%;
+    
+}
+
+#lighterz{
+    display: flex;
+}
+
+#lighterz > div{
+    margin-left: 2rem;
+}
+
+#aero-presents{
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 100;
+}
+#lighterz-txt{
+    font-size: 5rem;
+    margin: 0;
+    font-weight: 100;
+}
+
+#bird-logo{
+    width: 9rem;
+}
+
+.buttn-all{
+    width: 12rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+    border: solid 1px rgb(255, 255, 255)
+}
+
+.buttn-all:hover{
+    transform: scale(1.05);   
+}
+
+#shopall{
+    font-weight: 100;
+    background-color: #bebebe;
+}
+
+#start-button{
+    display: flex;
+    gap: 7rem;
+    position: relative;
+    top: 5rem;
+    left: 0;
+    height: 15vh;
+}
+
+.ai-enhance{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#square-phone{
+    height: 40rem;
+    border-radius: 0 100px 0 0;
+}
+
+.ai-enhance > div{
+    width: 40vw;
+    height: 40vh;
+}
+
+.phone-heading{
+    font-size: 3rem;
+
+}
+#phone-para{
+    font-size: 1.3rem;
+    gap: 30px;
+    font-weight:100;
+    letter-spacing:2px;
+    line-height: 1.8;
+    word-spacing: 5px;
+}
+
+.product-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+.product-page h1{
+    font-size: 3rem;
+}
+
+.products{
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.product-data{
+    width: 20rem;
+    height: 24rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 50px;
+    padding: 20px 0;
+    text-decoration: none;
+
+}
+
+.product-logo{
+    width: 17rem;
+    height: 17rem;
+    border-radius: 0 35px 0 0;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.2s ease;
+}
+
+.product-logo:hover{
+    transform: scale(1.05);
+}
+
+.product-name{
+    color: black;
+
+}
+
+.product-info{
+    color: black;
+    margin: 0;
+    padding: 0 1rem;
+    font-weight: 100;
+    text-align: center;
+
+}
+
+
+
+.support-box{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.support-data{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.support{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.laptop-box{
+    display: flex;
+    width: 40%;
+}
+
+.laptop-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 20% 0 0;
+}
